@@ -5,7 +5,7 @@ build_version:
   build_name: "1.0.0"
   build_number: "1"
 deep_link:
-  apple_team_id: "RP55H9K2Y6"
+  apple_team_id: "G2PLJTU69S"
   link: "webview.app"
 flutter_application_id:
   android:
