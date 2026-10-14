@@ -1,0 +1,34 @@
+[✓] Flutter (Channel stable, 3.44.7, on macOS 26.6.2 25G83 darwin-arm64, locale en-TR) [355ms]
+    • Flutter version 3.44.7 on channel stable at /Users/omeragent/Documents/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 84fc5cbb22 (8 weeks ago), 2026-07-17 10:20:17 -0700
+    • Engine revision 69c8c61792
+    • Dart version 3.12.2
+    • DevTools version 2.57.0
+    • Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-native-assets, no-enable-swift-package-manager, omit-legacy-version-file, enable-lldb-debugging, enable-uiscene-migration
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 37.0.0) [1,479ms]
+    • Android SDK at /Users/omeragent/Library/Android/sdk
+    • Emulator version 36.6.11.0 (build_id 15507667) (CL:N/A)
+    • Platform android-37.0, build-tools 37.0.0
+    • Java binary at: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment (build 21.0.9+-14649483-b1163.86)
+    • All Android licenses accepted.
+
+[✓] Xcode - develop for iOS and macOS (Xcode 26.6) [976ms]
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Build 17F113
+    • CocoaPods version 1.16.2
+
+[✗] Chrome - develop for the web (Cannot find Chrome executable at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome) [4ms]
+    ! Cannot find Chrome. Try setting CHROME_EXECUTABLE to a Chrome executable.
+
+[✓] Connected device (1 available) [6.2s]
+    • macOS (desktop) • macos • darwin-arm64 • macOS 26.6.2 25G83 darwin-arm64
+
+[✓] Network resources [856ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 1 category.

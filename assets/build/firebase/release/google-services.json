@@ -1,0 +1,238 @@
+{
+  "project_info": {
+    "project_number": "689927504625",
+    "project_id": "next-project-25",
+    "storage_bucket": "next-project-25.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:5ebe44bfc6825e20479f50",
+        "android_client_info": {
+          "package_name": "com.kindkitchencompany.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:9b918067be41b533479f50",
+        "android_client_info": {
+          "package_name": "com.kinetictot.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:b4a7f827c69c10cd479f50",
+        "android_client_info": {
+          "package_name": "com.kitchenhelperstore.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:e3cfdb065a0996c8479f50",
+        "android_client_info": {
+          "package_name": "com.missionhound.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:8c6366cb3f5ab245479f50",
+        "android_client_info": {
+          "package_name": "com.muleboost.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:96797e44d2bf19c2479f50",
+        "android_client_info": {
+          "package_name": "com.mypetfamilycenter.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:d451e674cefe7f43479f50",
+        "android_client_info": {
+          "package_name": "com.northernoutdoorventures.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:183a9c3b6d0989ab479f50",
+        "android_client_info": {
+          "package_name": "com.paradisepetproducts.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:b7c9167c921b5d35479f50",
+        "android_client_info": {
+          "package_name": "com.pawjoysupplies.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:43e89407cf834627479f50",
+        "android_client_info": {
+          "package_name": "com.pawpizzazz.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:c442edbb55759183479f50",
+        "android_client_info": {
+          "package_name": "com.pawsandthingspetsupply.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689927504625:android:a6af23836e026dfe479f50",
+        "android_client_info": {
+          "package_name": "com.petparadisesupply.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSvQlgRg10zTibhRr37kOx2dJII_Dj80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

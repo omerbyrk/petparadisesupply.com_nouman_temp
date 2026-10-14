@@ -1,0 +1,145 @@
+use_local:
+  reg_exp: '(use_local[ ]*=[ ]*)"(true|false)"'
+  result_value: 'use_local="$value"'
+  rule_type: 'Replace'
+  value_config_path: 'use_local'
+  expected_match: 1
+  file_path: 'bin/build_variables.sh'
+
+force_remote_control:
+  reg_exp: '(force_remote_control[ ]*=[ ]*)"(true|false)"'
+  result_value: 'force_remote_control="$value"'
+  rule_type: 'Replace'
+  value_config_path: 'force_remote_control'
+  expected_match: 1
+  file_path: 'bin/build_variables.sh'
+
+build_name:
+  reg_exp: '(build_name[ ]*=[ ]*)"[0-9.]*"'
+  result_value: 'build_name="$value"'
+  rule_type: 'Replace'
+  value_config_path: 'build_version.build_name'
+  expected_match: 1
+  file_path: 'bin/build_variables.sh'
+
+build_number:
+  reg_exp: '(build_number[ ]*=[ ]*)"[0-9]*"'
+  result_value: 'build_number="$value"'
+  rule_type: 'Replace'
+  value_config_path: 'build_version.build_number'
+  expected_match: 1
+  file_path: 'bin/build_variables.sh'
+
+iOS_deep_link:
+  reg_exp: '(applinks:[a-z_-]*.[a-z_-]*)<'
+  result_value: 'applinks:$value<'
+  rule_type: 'Replace'
+  value_config_path: 'deep_link.link'
+  expected_match: 1
+  file_path: 'ios/Runner/Runner.entitlements'
+
+long_iOS_deep_link:
+  reg_exp: '(applinks:www.[a-z_-]*.[a-z_-]*)<'
+  result_value: 'applinks:www.$value<'
+  rule_type: 'Replace'
+  value_config_path: 'deep_link.link'
+  expected_match: 1
+  file_path: 'ios/Runner/Runner.entitlements'
+
+iOS_dynamic_link: 
+  reg_exp: '(applinks:[a-z_-]*.page.link)<'
+  result_value: 'applinks:$value.page.link<'
+  rule_type: 'Replace'
+  value_config_path: 'deep_link.link'
+  expected_match: 1
+  file_path: 'ios/Runner/Runner.entitlements'
+
+long_android_deep_link: 
+  reg_exp: 'android:host="www.[a-z-_]*[.][a-z-_]*"'
+  result_value: 'android:host="www.$value"'
+  rule_type: 'Replace'
+  value_config_path: 'deep_link.link'
+  expected_match: 1
+  file_path: 'android/app/src/main/AndroidManifest.xml'
+
+android_deep_link: 
+  reg_exp: 'android:host="[a-z-_]*[.][a-z-_]*"'
+  result_value: 'android:host="$value"'
+  rule_type: 'Replace'
+  value_config_path: 'deep_link.link'
+  expected_match: 1
+  file_path: 'android/app/src/main/AndroidManifest.xml'
+
+apple_app_site_association_file:
+  reg_exp: '("appID"[ ]*:[ ]*)"[a-zA-Z-_0-9.]*"[,]$'
+  result_value: '"appID":"$value",'
+  rule_type: 'Replace'
+  value_config_path: 'deep_link.apple_team_id+$dot+flutter_application_id.ios.id'
+  expected_match: 1
+  file_path: 'assets/apple-app-site-association'
+
+assetlinks:
+  reg_exp: '("package_name"[ ]*:[ ]*)"[a-zA-Z-_0-9.]*"[,]$'
+  result_value: '"package_name":"$value",'
+  rule_type: 'Replace'
+  value_config_path: 'flutter_application_id.android.id'
+  expected_match: 1
+  file_path: 'assets/assetlinks.json'
+
+android_admob_app_id:
+  reg_exp: '"[a-z]{2}-[a-z]{3}-[a-z]{3}-[0-9]{16}~[0-9]{10}"'
+  result_value: '"$value"'
+  rule_type: 'Replace'
+  value_config_path: 'admob.android_app_id'
+  expected_match: 1
+  file_path: 'android/app/src/main/AndroidManifest.xml'
+
+iOS_admob_app_id:
+  reg_exp: '[a-z]{2}-[a-z]{3}-[a-z]{3}-[0-9]{16}~[0-9]{10}'
+  result_value: '$value'
+  rule_type: 'Replace'
+  value_config_path: 'admob.iOS_app_id'
+  expected_match: 1
+  file_path: 'ios/Runner/Info.plist'
+
+ios_bundle_id:
+  reg_exp: '^(?!.*(?:ImageNotification)).*(?:(PRODUCT_BUNDLE_IDENTIFIER[ ]*=[ ]*)[a-zA-Z-_0-9.]*;$)'
+  result_value: 'PRODUCT_BUNDLE_IDENTIFIER=$value;'
+  rule_type: 'Replace'
+  value_config_path: 'flutter_application_id.ios.id'
+  expected_match: 2
+  file_path: 'ios/Runner.xcodeproj/project.pbxproj'
+
+ios_image_notification_bundle_id:
+  reg_exp: '(PRODUCT_BUNDLE_IDENTIFIER[ ]*=[ ]*)[a-zA-Z-_0-9.]*.ImageNotification;$'
+  result_value: 'PRODUCT_BUNDLE_IDENTIFIER=$value.ImageNotification;'
+  rule_type: Replace
+  value_config_path: 'flutter_application_id.ios.id'
+  expected_match: 2
+  file_path: 'ios/Runner.xcodeproj/project.pbxproj'
+
+ios_app_name: 
+  reg_exp: '<string>[^<>][a-zA-Z-_0-9. iİşŞğĞüÜıIöÖ ]*[^<>](<\/string>)$'
+  result_value: '<string>$value</string>'
+  key: 'CFBundleName'
+  rule_type: 'PList'
+  value_config_path: 'flutter_application_id.ios.name'
+  expected_match: 1
+  file_path: 'ios/Runner/Info.plist'
+
+android_bundle_id: 
+  reg_exp: '(applicationId[ ]*=[ ]*"[a-zA-Z-_0-9.]*"$)'
+  result_value: 'applicationId="$value"'
+  rule_type: 'Replace'
+  value_config_path: 'flutter_application_id.android.id'
+  expected_match: 1
+  file_path: 'android/app/build.gradle.kts'
+
+android_name: 
+  reg_exp: '(android:label[ ]*=[ ]*)"[a-zA-Z-_0-9. iİşŞğĞüÜıIöÖ ]*"$'
+  result_value: 'android:label="$value"'
+  rule_type: 'Replace'
+  value_config_path: 'flutter_application_id.android.name'
+  expected_match: 1
+  file_path: 'android/app/src/main/AndroidManifest.xml'
+
